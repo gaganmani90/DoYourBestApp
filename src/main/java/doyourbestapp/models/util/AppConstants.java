@@ -7,4 +7,5 @@ package doyourbestapp.models.util;
 public class AppConstants {
     public final static String DATE_FORMAT = "dd/MM/yyyy";
     public final static String INVALID_REQUEST_MESSAGE = "Not a valid request";
+    public final static int DEFAULT_ID = -1;
 }

@@ -1,5 +1,6 @@
 package doyourbestapp.models.contract;
 
+import doyourbestapp.models.util.AppConstants;
 import lombok.Builder;
 import lombok.Data;
 
@@ -11,34 +12,15 @@ import lombok.Data;
 @Data
 public class FetchRequest implements Request {
     /**
-     *
-     */
-    private FetchRequestType fetchRequestType = FetchRequestType.ALL;
-    /**
      * User id
      */
-    private int id;
-    /**
-     * optional: if not provided, means today's date.
-     */
-    private int day;
-    /**
-     * optional: if not provided, means current month.
-     */
-    private int month;
-    /**
-     * optional: if not provided, means current year.
-     */
-    private int year;
+    private int id = AppConstants.DEFAULT_ID;
+
 
     @Override
     public String toString() {
         return "FetchRequest{" +
-                "id=" + id +
-                ", day=" + day +
-                ", month=" + month +
-                ", year=" + year +
-                '}';
+                "id=" + id + '}';
     }
 }
 

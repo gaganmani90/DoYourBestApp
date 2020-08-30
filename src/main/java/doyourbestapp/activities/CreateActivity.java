@@ -1,12 +1,11 @@
 package doyourbestapp.activities;
 
-import doyourbestapp.models.util.AppConstants;
-import doyourbestapp.models.cache.CreateActivityCache;
-import doyourbestapp.models.contract.CreateRequest;
-import doyourbestapp.models.contract.CreateResponse;
 import doyourbestapp.models.RetroCalendarInventory;
 import doyourbestapp.models.RetroCalender;
 import doyourbestapp.models.RetroDay;
+import doyourbestapp.models.contract.CreateRequest;
+import doyourbestapp.models.contract.CreateResponse;
+import doyourbestapp.models.util.AppConstants;
 import doyourbestapp.models.util.DateUtility;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -27,9 +26,6 @@ import java.util.Date;
 @Service
 public class CreateActivity implements Activity<CreateRequest, CreateResponse> {
     private static final Logger LOGGER = LoggerFactory.getLogger(CreateActivity.class);
-
-    @Autowired
-    CreateActivityCache doYourBestCache;
 
     @Autowired
     RetroCalendarInventory retroCalendarInventory;

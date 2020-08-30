@@ -1,10 +1,8 @@
 package doyourbestapp.activities;
 
-import doyourbestapp.models.cache.CreateActivityCache;
-import doyourbestapp.models.contract.FetchRequest;
-import doyourbestapp.models.contract.FetchRequestType;
-import doyourbestapp.models.contract.FetchResponse;
 import doyourbestapp.models.RetroCalendarInventory;
+import doyourbestapp.models.contract.FetchRequest;
+import doyourbestapp.models.contract.FetchResponse;
 import doyourbestapp.models.util.AppConstants;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,9 +18,6 @@ public class FetchActivity implements Activity<FetchRequest, FetchResponse> {
     private static final Logger LOGGER = LoggerFactory.getLogger(FetchActivity.class);
 
     @Autowired
-    CreateActivityCache doYourBestCache;
-
-    @Autowired
     RetroCalendarInventory retroCalendarInventory;
 
     @Override
@@ -35,18 +30,15 @@ public class FetchActivity implements Activity<FetchRequest, FetchResponse> {
 
     @Override
     public FetchResponse processRequest(FetchRequest fetchRequest) {
-        switch (FetchRequestType.ALL) {
-            case ALL:
-                return FetchResponse.builder()
-                        .retroCalendarInventory(retroCalendarInventory)
-                        .build();
-            case DAY:
-                break;
-            case MONTH:
-                break;
-            case YEAR:
-                break;
+        LOGGER.info("processing fetch request ...");
+        if (fetchRequest.getId() == AppConstants.DEFAULT_ID) {
+            return FetchResponse.builder()
+                    .retroCalendarInventory(retroCalendarInventory)
+                    .build();
+        } else {
+            //TODO: what response should be returned for specific user id ?
         }
+
         return null;
     }
 

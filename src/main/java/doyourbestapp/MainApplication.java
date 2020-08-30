@@ -1,6 +1,5 @@
 package doyourbestapp;
 
-import doyourbestapp.models.cache.CreateActivityCache;
 import doyourbestapp.models.RetroCalendarInventory;
 import doyourbestapp.models.RetroCalender;
 import org.slf4j.Logger;
@@ -21,11 +20,6 @@ public class MainApplication {
     public static void main(String s[]) {
         SpringApplication.run(MainApplication.class, s);
         LOGGER.info("Inside main application");
-    }
-
-    @Bean
-    public CreateActivityCache responseCache() {
-        return CreateActivityCache.getInstance();
     }
 
     @Bean
