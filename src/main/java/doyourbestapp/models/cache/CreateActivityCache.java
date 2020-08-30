@@ -1,8 +1,8 @@
-package doyourbestapp.cache;
+package doyourbestapp.models.cache;
 
 import com.google.common.cache.CacheBuilder;
 import com.google.common.cache.LoadingCache;
-import doyourbestapp.contract.FetchResponse;
+import doyourbestapp.models.contract.FetchResponse;
 import doyourbestapp.models.RetroDay;
 import lombok.Getter;
 

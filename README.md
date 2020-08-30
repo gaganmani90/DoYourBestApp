@@ -27,4 +27,41 @@ http://localhost:8080/fetch
 }
 ```
 
+* Response
+```json
+{
+    "errorMessage": null,
+    "retroCalendarInventory": {
+        "userDaysMap": {
+            "11": {
+                "retroDays": [
+                    {
+                        "userId": 11,
+                        "note": "gagan mani",
+                        "date": "1988-10-20T07:00:00.000+0000",
+                        "myBestDay": false
+                    },
+                    {
+                        "userId": 11,
+                        "note": "gagan mani",
+                        "date": "1989-10-20T07:00:00.000+0000",
+                        "myBestDay": false
+                    }
+                ]
+            },
+            "12": {
+                "retroDays": [
+                    {
+                        "userId": 12,
+                        "note": "Shivani",
+                        "date": "1989-10-20T07:00:00.000+0000",
+                        "myBestDay": false
+                    }
+                ]
+            }
+        }
+    }
+}
+```
+
 * Response body

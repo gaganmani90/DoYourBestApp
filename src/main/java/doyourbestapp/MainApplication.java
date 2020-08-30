@@ -1,6 +1,6 @@
 package doyourbestapp;
 
-import doyourbestapp.cache.CreateActivityCache;
+import doyourbestapp.models.cache.CreateActivityCache;
 import doyourbestapp.models.RetroCalendarInventory;
 import doyourbestapp.models.RetroCalender;
 import org.slf4j.Logger;

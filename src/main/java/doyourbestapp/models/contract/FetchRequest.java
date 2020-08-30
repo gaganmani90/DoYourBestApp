@@ -1,4 +1,4 @@
-package doyourbestapp.contract;
+package doyourbestapp.models.contract;
 
 import lombok.Builder;
 import lombok.Data;

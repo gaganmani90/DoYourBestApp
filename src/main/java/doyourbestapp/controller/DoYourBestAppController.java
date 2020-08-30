@@ -2,12 +2,12 @@ package doyourbestapp.controller;
 
 import doyourbestapp.activities.CreateActivity;
 import doyourbestapp.activities.FetchActivity;
-import doyourbestapp.cache.CreateActivityCache;
-import doyourbestapp.contract.CreateRequest;
-import doyourbestapp.contract.CreateResponse;
-import doyourbestapp.contract.FetchRequest;
-import doyourbestapp.contract.FetchResponse;
-import doyourbestapp.contract.Response;
+import doyourbestapp.models.cache.CreateActivityCache;
+import doyourbestapp.models.contract.CreateRequest;
+import doyourbestapp.models.contract.CreateResponse;
+import doyourbestapp.models.contract.FetchRequest;
+import doyourbestapp.models.contract.FetchResponse;
+import doyourbestapp.models.contract.Response;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +20,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.text.ParseException;
-import java.util.concurrent.ExecutionException;
 
 /**
  * @author shivanidwivedi on 29/07/20

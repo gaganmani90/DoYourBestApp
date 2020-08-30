@@ -1,4 +1,4 @@
-package doyourbestapp.contract;
+package doyourbestapp.models.contract;
 
 public interface Request {
 }

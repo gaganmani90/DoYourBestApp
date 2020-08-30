@@ -1,4 +1,4 @@
-package doyourbestapp.util;
+package doyourbestapp.models.util;
 
 /**
  * @author shivanidwivedi on 06/08/20

@@ -1,13 +1,13 @@
 package doyourbestapp.activities;
 
-import doyourbestapp.util.AppConstants;
-import doyourbestapp.cache.CreateActivityCache;
-import doyourbestapp.contract.CreateRequest;
-import doyourbestapp.contract.CreateResponse;
+import doyourbestapp.models.util.AppConstants;
+import doyourbestapp.models.cache.CreateActivityCache;
+import doyourbestapp.models.contract.CreateRequest;
+import doyourbestapp.models.contract.CreateResponse;
 import doyourbestapp.models.RetroCalendarInventory;
 import doyourbestapp.models.RetroCalender;
 import doyourbestapp.models.RetroDay;
-import doyourbestapp.util.DateUtility;
+import doyourbestapp.models.util.DateUtility;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

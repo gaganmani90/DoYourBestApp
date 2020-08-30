@@ -1,4 +1,4 @@
-package doyourbestapp.contract;
+package doyourbestapp.models.contract;
 
 /**
  * @author shivanidwivedi on 05/08/20

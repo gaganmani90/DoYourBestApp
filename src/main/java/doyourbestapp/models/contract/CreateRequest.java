@@ -1,4 +1,4 @@
-package doyourbestapp.contract;
+package doyourbestapp.models.contract;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Builder;

@@ -1,9 +1,7 @@
-package doyourbestapp.contract;
+package doyourbestapp.models.contract;
 
-import doyourbestapp.models.RetroCalendarInventory;
 import lombok.Builder;
 import lombok.Data;
-import org.springframework.http.ResponseEntity;
 
 /**
  * @author shivanidwivedi on 05/08/20

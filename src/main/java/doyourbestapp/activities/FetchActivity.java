@@ -1,19 +1,15 @@
 package doyourbestapp.activities;
 
-import doyourbestapp.cache.CreateActivityCache;
-import doyourbestapp.contract.FetchRequest;
-import doyourbestapp.contract.FetchRequestType;
-import doyourbestapp.contract.FetchResponse;
+import doyourbestapp.models.cache.CreateActivityCache;
+import doyourbestapp.models.contract.FetchRequest;
+import doyourbestapp.models.contract.FetchRequestType;
+import doyourbestapp.models.contract.FetchResponse;
 import doyourbestapp.models.RetroCalendarInventory;
-import doyourbestapp.models.RetroCalender;
-import doyourbestapp.util.AppConstants;
+import doyourbestapp.models.util.AppConstants;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * @author shivanidwivedi on 03/08/20
