@@ -4,3 +4,6 @@ target
 *.iml
 *.plantuml
 .DS_store
+src/node_modules
+src/package-lock.json
+frontend/node_modules

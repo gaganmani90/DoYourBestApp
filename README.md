@@ -1,3 +1,6 @@
+## Build
+`mvn package`
+
 ## Endpoints
 
 ### Create
